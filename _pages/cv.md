@@ -9,23 +9,27 @@ redirect_from:
 
 {% include base_path %}
 
+PDF version available [here](https://klintkanopka.com/files/kanopkacv.pdf)
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Physics, Drexel University, 2005
+* M.S. in Education, Drexel University, 2012
+* M.S. in Computer Science (Artificial Intelligence), Stanford University, 2021
+* Ph.D in Education (Developmental and Psychological Sciences), Stanford University, 2022 (expected)
 
-Work experience
+Research Interests
+=====
+Psychometrics, Machine Learning, Natural Language Processing, Bayesian Statistics, Graphical Models
+
+Professional Experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2010-2017 **The Academy at Palumbo**, Philadelphia School District
+  * Physics and math teacher
+  * Coached speech and debate (NSDA, NCFL, PHSSL, PCFL) and robotics (FIRST FTC)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2010 **Crossroads Accelerated Academy**, Philadelphia School District
+  * Physical science teacher
   
 Skills
 ======
@@ -54,6 +58,14 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Service and Leadership
 ======
-* Currently signed in to 43 different slack teams
+* **Stanford GSE Student Guild**, Academic Chair (2019-2021)
+* **Computational Text Analysis in the Social Sciences**, Co-President (2019-2021)
+* **Social Science Data and Software**, Consultant (2019-2021)
+
+Professional Affiliations
+======
+* American Educational Research Association
+* National Council on Measurement in Education
+* Psychometric Society
