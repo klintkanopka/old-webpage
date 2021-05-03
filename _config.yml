@@ -82,10 +82,10 @@ analytics:
 author:
   name             : "Klint Kanopka"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Ph.D candidate at the Stanford Graduate School of Education interested in psychometrics and computational methods"
+  location         : "Stanford, CA"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=klint+kanopka"
   googlescholar    : "https://scholar.google.com/citations?user=GsEONQYAAAAJ"
   email            : "kkanopka@stanford.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
