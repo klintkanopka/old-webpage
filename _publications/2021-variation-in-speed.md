@@ -3,8 +3,8 @@ title: 'Variation in respondent speed and its implications: Evidence from an ada
 collection: publications
 permalink: /publication/2021-variation-in-speed
 excerpt: 'We take advantage of a large dataset from the adaptive NWEA MAP Growth Reading Assessment to shed light on emergent features of response time behavior, identifying two behaviors in particular.'
-date: 2021-04-01
-venue: 'Journal of Educational Measurement'
+date: 2021-04-15
+venue: 'PsyArXiv'
 paperurl: 'https://psyarxiv.com/r54ec/'
 citation: 'Domingue, B.W., Kanopka, K., Stenhaug, B., Soland, J., Kuhfeld, M., Wise, S., & Piech, C. (In press, 2021). Variation in respondent speed and its implications: Evidence from an adaptive testing scenario. Preprint available: https://psyarxiv.com/r54ec/'
 ---
