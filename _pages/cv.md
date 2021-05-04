@@ -24,22 +24,13 @@ Psychometrics, Machine Learning, Natural Language Processing, Bayesian Statistic
 
 Professional Experience
 ======
-* 2010-2017 **The Academy at Palumbo**, Philadelphia School District
+* **The Academy at Palumbo**, Philadelphia School District, 2010-1017
   * Physics and math teacher
   * Coached speech and debate (NSDA, NCFL, PHSSL, PCFL) and robotics (FIRST FTC)
 
-* 2010 **Crossroads Accelerated Academy**, Philadelphia School District
+* **Crossroads Accelerated Academy**, Philadelphia School District, 2010
   * Physical science teacher
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
 Publications
 ======
   <ul>{% for post in site.publications %}
@@ -60,9 +51,9 @@ Teaching
   
 Service and Leadership
 ======
-* **Stanford GSE Student Guild**, Academic Chair (2019-2021)
-* **Computational Text Analysis in the Social Sciences**, Co-President (2019-2021)
-* **Social Science Data and Software**, Consultant (2019-2021)
+* **Stanford GSE Student Guild**, Academic Chair, 2019-2021
+* **Computational Text Analysis in the Social Sciences**, Co-President, 2019-2021
+* **Social Science Data and Software**, Consultant, 2019-2021
 
 Professional Affiliations
 ======
