@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Note that the content generated below is a work in progress. A complete PDF version of my CV is available [here](https://klintkanopka.com/files/kanopkacv.pdf)
+Note that the content generated below is a work in progress. A complete PDF version of my CV is available [here](https://klintkanopka.com/files/kanopkacv.pdf).
 
 Education
 ======
