@@ -1,5 +1,5 @@
 ---
-title: 'Variation in respondent speed and its implications: Evidence from an adaptive testing scenario'
+title: 'Speed accuracy tradeoff? Not so fast: Marginal changes in speed have inconsistent relationships with accuracy in real-world settings'
 collection: publications
 permalink: /publication/2021-speed-accuracy-tradeoff
 excerpt: 'Using a large corpus of 29 response time datasets containing data from cognitive tasks without experimental manipulation of time pressure, we probe whether the speed-accuracy tradeoff holds across a variety of tasks using idiosyncratic within-person variation in speed and find inconsistent relationships between marginal increases in time spent responding and accuracy.'
