@@ -110,6 +110,28 @@
 
     timeline.push(test_procedure);
 
+    /* define instructions trial */
+    var roar_instructions = {
+      type: "html-keyboard-response",
+      stimulus: `
+        <p>Now you will do a different task for science!</p>
+        <p>The magic words sound like fake, made-up words.
+        They might look like English words, but they don't
+        mean anything in English. For example, <i> laip, bove,</i> and <i>
+        cigbert</i> are magic words.
+        If you see a magic word, press the <strong>LEFT ARROW KEY</strong></p>
+        <p>The other words will be onese you recognize.
+        They are real English words like <i>is, basket,</i> and <i>lion.</i>
+        If you see a real word, hit the <strong>RIGHT ARROW KEY</strong></p>
+        </div>
+        <p>Press any key to begin practice!</p>
+      `,
+      post_trial_gap: 2000
+    };
+
+    timeline.push(roar_instructions);
+
+
     var debrief_block = {
       type: "html-keyboard-response",
       stimulus: function() {
@@ -125,58 +147,63 @@
           <p>Your average response time on correct trials was ${rt}ms.</p>
           <p>Your average response time on incorrect trials was ${irt}ms.</p>
           <p>Press any key to complete the experiment. Thank you!</p>`;
-
       }
     };
 
-    const csvPromise = new Promise((resolve, reject) => {
-      Papa.parse(
-          'https://raw.githubusercontent.com/klintkanopka/js4ds/main/roar/roar-blocks/ldt-stimuli.csv', {
-              download: true,
-              header: true,
-              dynamicTyping: true,
-              skipEmptyLines: true,
-              complete: function (results) {
-                  var csv_stimuli = results.data
-                  resolve(csv_stimuli)
-                }
+
+    function readCSV(url) {
+      return new Promise((resolve, reject) => {
+        Papa.parse(
+            url, {
+                download: true,
+                header: true,
+                dynamicTyping: true,
+                skipEmptyLines: true,
+                complete: function (results) {
+                    var csv_stimuli = results.data
+                    resolve(csv_stimuli)
+                  }
+        })
       })
-    })
+    }
 
-    csvPromise.then((csv_result) => {
-        csv_result = csv_result
-                      .reduce((accum, row) => {
-                        if (row.realpseudo === 'real') {
-                          correct_response = 'ArrowRight'
-                        } else {
-                          correct_response = 'ArrowLeft'
-                        }
-                        const newRow = {
-                          'stimulus': '<div style="font-size:60px;">' + row.word + '</div>',
-                          'correct_response': correct_response
-                        }
-                        accum.push(newRow)
-                        return accum
-                      }, [])
-        console.log(csv_result)
-        var csv_block = {
-          timeline: [fixation, test],
-          timeline_variables: csv_result,
-          randomize_order: true
-        }
-        //console.log(csv_block)
-        timeline.push(csv_block)
-    }).then(timeline.push(debrief_block))
-      .then(console.log(timeline))
+    async function roarBlocks(data, randomize){
+      var csv_stimuli = await readCSV(data)
 
-      /* start the experiment */
+      csv_result = csv_stimuli
+                    .reduce((accum, row) => {
+                      if (row.realpseudo === 'real') {
+                        correct_response = 'ArrowRight'
+                      } else {
+                        correct_response = 'ArrowLeft'
+                      }
+                      const newRow = {
+                        'stimulus': '<div style="font-size:60px;">' + row.word + '</div>',
+                        'correct_response': correct_response
+                      }
+                      accum.push(newRow)
+                      return accum
+                    }, [])
+
+      var csv_block = {
+        timeline: [fixation, test],
+        timeline_variables: csv_result,
+        randomize_order: randomize
+      }
+
+      timeline.push(csv_block)
+      timeline.push(debrief_block)
+
       jsPsych.init({
         timeline: timeline,
         on_finish: function() {  /* display data on exp end - useful for dev */
           jsPsych.data.displayData();
         }
       });
+    }
 
+    const data_url = 'https://raw.githubusercontent.com/klintkanopka/js4ds/main/roar/roar-blocks/ldt-stimuli.csv'
+    roarBlocks(data_url, true)
 
   </script>
 </html>
