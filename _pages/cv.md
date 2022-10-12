@@ -16,7 +16,7 @@ Education
 * B.S. in Physics, Drexel University, 2005
 * M.S. in Education, Drexel University, 2012
 * M.S. in Computer Science (Artificial Intelligence), Stanford University, 2021
-* Ph.D in Education (Developmental and Psychological Sciences), Stanford University, 2022 (expected)
+* Ph.D in Education (Developmental and Psychological Sciences), Stanford University, 2023 (expected)
 
 Research Interests
 =====
