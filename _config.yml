@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Klint Kanopka"
   avatar           : "profile.png"
-  bio              : "Ph.D candidate at the Stanford Graduate School of Education interested in psychometrics and computational methods"
-  location         : "Stanford, CA"
+  bio              : "Assistant Professor of Applied Statistics at NYU ASH"
+  location         : "New York, NY"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=klint+kanopka"
-  googlescholar    : "https://scholar.google.com/citations?user=GsEONQYAAAAJ"
-  email            : "kkanopka@stanford.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=R9BC0sYAAAAJ"
+  email            : "klint.kanopka@nyu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
